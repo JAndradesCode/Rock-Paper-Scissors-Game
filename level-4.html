@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors, Water, Fire, Air, Sponge, Human, Gun</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="body4">
+    <div class="container">
+        <header class="header4">
+            <h1>Rock Paper Scissors Water Fire Air Sponge Human Gun</h1>
+        </header>
+
+        <div class="input-area">
+            <label>Choose:</label>
+            <select id="select">
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+                <option value="water">Water</option>
+                <option value="fire">Fire</option>
+                <option value="air">Air</option>
+                <option value="sponge">Sponge</option>
+                <option value="human">Human</option>
+                <option value="gun">Gun</option>
+            </select>
+
+            <div class="button-area">
+                <button id="playHand" class="play4" onclick="playHand4()">Play Hand</button>
+            </div>
+
+            <p id="rules">View Newest Rules</p>
+        </div>
+
+        <div class="enemy-area">
+            <p>Your enemy has played: <span id="enemySelection"></span></p>
+        </div>
+
+        <div class="result-area" id="result"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

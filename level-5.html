@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Level</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="body5">
+    <div class="container">
+        <header class="header5">
+            <h1>Rock Paper Scissors Ultimate</h1>
+        </header>
+
+        <div class="input">
+            <label>Choose:</label>
+            <select id="select">
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+                <option value="water">Water</option>
+                <option value="fire">Fire</option>
+                <option value="air">Air</option>
+                <option value="sponge">Sponge</option>
+                <option value="human">Human</option>
+                <option value="gun">Gun</option>
+                <option value="tree">Tree</option>
+                <option value="lightning">Lightning</option>
+                <option value="wolf">Wolf</option>
+                <option value="snake">Snake</option>
+            </select>
+
+            <div class="button-area">
+                <button id="playHand" class="play5" onclick="playHand5()">Play Hand</button>
+            </div>
+
+            <p id="rules">View Ultimate Rules</p>
+        </div>
+
+        <div class="enemy">
+            <p>Your enemy has played: <span id="enemySelection"></span></p>
+        </div>
+
+        <div class="result" id="result"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+
+        <div class="input-area" id="iarea">
+            <label>Choose:</label>
+            <select id="select">
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+            </select>
+
+            <div class="button-area">
+                <button id="playHand" class="play" onclick="playHand()">Play Hand</button>
+            </div>
+
+            <p id="rules" title="rps">View Rules</p>
+        </div>
+
+        <div class="enemy-area">
+            <p>Your enemy has played: <span id="enemySelection"></span></p>
+        </div>
+
+        <div class="result-area" id="result"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
