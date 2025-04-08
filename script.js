@@ -2,6 +2,7 @@
 //r beats s
 //s beats p
 //p beats r
+//etc.
 
 //images for winner
 let winnerImage='';
@@ -32,6 +33,9 @@ let wolf='wolf.png';
 let eWolf='eWolf.png';
 let snake='snake.png';
 let eSnake='eSnake.png';
+
+//variable to see how many times the player has failed, if it exceeds 5, they must go back to the previous level
+let timesLost=0;
 
 ///WHAT TO ADD: SOUND EFFECTS AND SCORE
 
@@ -152,6 +156,7 @@ function playHand2(){
             console.log('enemy wins - paper beats rock');
             playerScore = 'You lose'
             winnerImage=ePaper;
+            timesLost+=1;
         }
         else if(userPick=='rock' && randomPick=='water'){
             console.log('player wins - rock beats water');
@@ -162,6 +167,7 @@ function playHand2(){
             console.log('enemy wins - fire beats rock');
             playerScore = 'You lose'
             winnerImage=fire;
+            timesLost+=1;
         }
 
         //if user chooses paper: WORKS
@@ -174,6 +180,7 @@ function playHand2(){
             console.log('enemy wins - scissors beat paper')
             playerScore = 'You lose'
             winnerImage=scissors;
+            timesLost+=1;
         }
         else if(userPick=='paper' && randomPick=='water'){
             console.log('player wins - paper beats water');
@@ -184,6 +191,7 @@ function playHand2(){
             console.log('enemy wins - fire beats paper');
             playerScore = 'You lose'
             winnerImage=eFire;
+            timesLost+=1;
         }
 
         //if user chooses scissors: WORKS
@@ -196,6 +204,7 @@ function playHand2(){
             console.log('enemy wins - rock beats scissors')
             playerScore = 'You lose'
             winnerImage=eRock;
+            timesLost+=1;
         }
         else if(userPick=='scissors' && randomPick=='water'){
             console.log('player wins - scissors beats water');
@@ -206,6 +215,7 @@ function playHand2(){
             console.log('enemy wins - fire beats scissors');
             playerScore = 'You lose'
             winnerImage=eFire;
+            timesLost+=1;
         }
 
         //if user chooses water: WORKS
@@ -219,18 +229,21 @@ function playHand2(){
             console.log('enemy wins - rock beats water')
             playerScore = 'You lose'
             winnerImage=eRock;
+            timesLost+=1;
             
         }
         else if(userPick=='water' && randomPick=='paper'){
             console.log('enemy wins - paper beats water')
             playerScore = 'You lose'
             winnerImage=ePaper;
+            timesLost+=1;
             
         }
         else if(userPick=='water' && randomPick=='scissors'){
             console.log('enemy wins - scissors beats water')
             playerScore = 'You lose'
             winnerImage=eScissors;
+            timesLost+=1;
             
         }
 
@@ -254,6 +267,7 @@ function playHand2(){
             console.log('player loses - water beats fire')
             playerScore = 'You lose'
             winnerImage=eWater;
+            timesLost+=1;
         }
         else{
             console.log('something went wrong')
@@ -1532,53 +1546,53 @@ function playHand5(){
         }
 
         //if user chooses: lightning:
-        else if(userPick=='tree' && randomPick=='rock'){
-            playerScore='You lose';
-            winnerImage=eRock;
-        }
-        else if(userPick=='tree' && randomPick=='paper'){
+        else if(userPick=='lightning' && randomPick=='rock'){
             playerScore='You win';
-            winnerImage=tree;
+            winnerImage=lightning;
         }
-        else if(userPick=='tree' && randomPick=='scissors'){
+        else if(userPick=='lightning' && randomPick=='paper'){
             playerScore='You lose';
-            winnerImage=eScissors;
+            winnerImage=ePaper;
         }
-        else if(userPick=='tree' && randomPick=='water'){
+        else if(userPick=='lightning' && randomPick=='scissors'){
             playerScore='You win';
-            winnerImage=tree;
+            winnerImage=lightning;
         }
-        else if(userPick=='tree' && randomPick=='fire'){
+        else if(userPick=='lightning' && randomPick=='water'){
             playerScore='You lose';
-            winnerImage=eFire;
+            winnerImage=eWater;
         }
-        else if(userPick=='tree' && randomPick=='air'){
+        else if(userPick=='lightning' && randomPick=='fire'){
             playerScore='You win';
-            winnerImage=tree;
+            winnerImage=lightning;
         }
-        else if(userPick=='tree' && randomPick=='sponge'){
-            playerScore = 'You win'
-            winnerImage=tree;
+        else if(userPick=='lightning' && randomPick=='air'){
+            playerScore='You lose';
+            winnerImage=eAir;
         }
-        else if(userPick=='tree' && randomPick=='human'){
-            playerScore = 'You win'
-            winnerImage=tree;
-        }
-        else if(userPick=='tree' && randomPick=='gun'){
+        else if(userPick=='lightning' && randomPick=='sponge'){
             playerScore = 'You lose'
-            winnerImage=eGun;
+            winnerImage=eSponge;
         }
-        else if(userPick=='tree' && randomPick=='lightning'){
-            playerScore = 'You lose'
-            winnerImage=eLightning;
-        }
-        else if(userPick=='tree' && randomPick=='wolf'){
+        else if(userPick=='lightning' && randomPick=='human'){
             playerScore = 'You win'
-            winnerImage=tree;
+            winnerImage=lightning;
         }
-        else if(userPick=='tree' && randomPick=='snake'){
+        else if(userPick=='lightning' && randomPick=='gun'){
+            playerScore = 'You win'
+            winnerImage=lightning;
+        }
+        else if(userPick=='lightning' && randomPick=='tree'){
+            playerScore = 'You win'
+            winnerImage=lightning;
+        }
+        else if(userPick=='lightning' && randomPick=='wolf'){
             playerScore = 'You lose'
-            winnerImage=eSnake;
+            winnerImage=eWolf;
+        }
+        else if(userPick=='lightning' && randomPick=='snake'){
+            playerScore = 'You win'
+            winnerImage=lightning;
         }
 
         //if user chooses wolf:
@@ -1691,7 +1705,7 @@ function playHand5(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='100px';
+    body.style.marginBottom='200px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
@@ -1706,13 +1720,20 @@ function playHand5(){
         document.getElementById('playHand').style.visibility='hidden';
     }
     //play again
-    else{
+    else if(playerScore=='You lose'){
         result.innerHTML=`
         <h2>${playerScore}!</h2>
         <img src="${winnerImage}" alt="${winnerImage}"><br>
         <button class="play5" onclick="playAgain5()">Play Again</button>
     `;
         document.getElementById('playHand').style.visibility='hidden';
+    }
+    //if player has lost too many times
+    if(timesLost>1){
+        result.innerHTML=`
+        <h2></h2>
+        <button class="play5" onclick="idk()">Play</button>
+        `;
     }
     
 }
@@ -1756,6 +1777,11 @@ function playAgain2(){
     document.getElementById('result').innerHTML='';
     document.getElementById('result').style.visibility='hidden';
     document.getElementById('playHand').style.visibility='visible';
+
+    if(timesLost>1){
+        window.open("index.html");
+        window.close("level-2.html");
+    }
 }
 
 //play again function for 3rd level
