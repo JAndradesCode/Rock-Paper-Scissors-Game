@@ -1471,27 +1471,27 @@ function playHand5(){
             winnerImage=eAir;
         }
         else if(userPick=='gun' && randomPick=='sponge'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eSponge;
         }
         else if(userPick=='gun' && randomPick=='human'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=gun;
         }
         else if(userPick=='gun' && randomPick=='tree'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=gun;
         }
         else if(userPick=='gun' && randomPick=='lightning'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eLightning;
         }
         else if(userPick=='gun' && randomPick=='wolf'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=gun;
         }
         else if(userPick=='gun' && randomPick=='snake'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=gun;
         }
 
@@ -1521,27 +1521,27 @@ function playHand5(){
             winnerImage=tree;
         }
         else if(userPick=='tree' && randomPick=='sponge'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=tree;
         }
         else if(userPick=='tree' && randomPick=='human'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=tree;
         }
         else if(userPick=='tree' && randomPick=='gun'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eGun;
         }
         else if(userPick=='tree' && randomPick=='lightning'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eLightning;
         }
         else if(userPick=='tree' && randomPick=='wolf'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=tree;
         }
         else if(userPick=='tree' && randomPick=='snake'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eSnake;
         }
 
@@ -1571,27 +1571,27 @@ function playHand5(){
             winnerImage=eAir;
         }
         else if(userPick=='lightning' && randomPick=='sponge'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eSponge;
         }
         else if(userPick=='lightning' && randomPick=='human'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=lightning;
         }
         else if(userPick=='lightning' && randomPick=='gun'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=lightning;
         }
         else if(userPick=='lightning' && randomPick=='tree'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=lightning;
         }
         else if(userPick=='lightning' && randomPick=='wolf'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eWolf;
         }
         else if(userPick=='lightning' && randomPick=='snake'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=lightning;
         }
 
@@ -1621,27 +1621,27 @@ function playHand5(){
             winnerImage=wolf;
         }
         else if(userPick=='wolf' && randomPick=='sponge'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=wolf;
         }
         else if(userPick=='wolf' && randomPick=='human'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=tree;
         }
         else if(userPick=='wolf' && randomPick=='gun'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eGun;
         }
         else if(userPick=='tree' && randomPick=='lightning'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=wolf;
         }
         else if(userPick=='wolf' && randomPick=='tree'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eTree;
         }
         else if(userPick=='wolf' && randomPick=='snake'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eSnake;
         }
 
@@ -1671,27 +1671,27 @@ function playHand5(){
             winnerImage=snake;
         }
         else if(userPick=='snake' && randomPick=='sponge'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=snake;
         }
         else if(userPick=='snake' && randomPick=='human'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=snake;
         }
         else if(userPick=='snake' && randomPick=='gun'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eGun;
         }
         else if(userPick=='snake' && randomPick=='lightning'){
-            playerScore = 'You lose'
+            playerScore = 'You lose';
             winnerImage=eLightning;
         }
         else if(userPick=='snake' && randomPick=='wolf'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=snake;
         }
         else if(userPick=='snake' && randomPick=='tree'){
-            playerScore = 'You win'
+            playerScore = 'You win';
             winnerImage=snake;
         }
 
@@ -1705,7 +1705,7 @@ function playHand5(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='200px';
+    body.style.marginBottom='250px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
