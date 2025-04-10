@@ -101,7 +101,7 @@ function playHand(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='100px';
+    body.style.marginBottom='200px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
@@ -279,7 +279,7 @@ function playHand2(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='100px';
+    body.style.marginBottom='200px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
@@ -562,7 +562,7 @@ function playHand3(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='100px';
+    body.style.marginBottom='200px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
@@ -999,7 +999,7 @@ function playHand4(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='100px';
+    body.style.marginBottom='200px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
