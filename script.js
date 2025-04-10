@@ -101,7 +101,7 @@ function playHand(){
 
     //show who won & create play again OR next level button
     let body=document.getElementById('body');
-    body.style.marginBottom='200px';
+    body.style.marginBottom='250px';
 
     let result=document.getElementById('result');
     result.style.visibility='visible';
